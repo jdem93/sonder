@@ -484,7 +484,7 @@ button {
 
 /* @ */
 
-@media (max-width:1392px) {
+@media (max-width:1692px) {
     #kontaktflex {
         flex-direction: column-reverse;
     }
