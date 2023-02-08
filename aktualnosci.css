@@ -118,6 +118,10 @@ li {
     padding-right: 1rem;
 }
 
+article ul li {
+    list-style: disc;
+}
+
 li a img {
     display: inline-block;
     max-width: clamp(0.4rem, 0.75vw, 0.8rem);
