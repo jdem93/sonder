@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    box-sizing: border-box;
+    background: #fff url(assets/bg1.webp) center/cover no-repeat fixed;
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #8B724F;
+    font-size: clamp(0.8rem, 1.5vw, 2rem);
+    text-align: center;
+}
+
+
+/*  */
+
+body {
+    backdrop-filter: blur(5px);
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+}
+
+/*  */
+
+a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+div img {
+    animation: sent 3s 1;
+    opacity: 0;
+    margin: auto;
+    width: 25%;
+}
+
+
+@keyframes sent {
+    0% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    60% {
+        transform: scale(1.1, 1.1);
+    }
+
+    80% {
+        transform: scale(1.1, 1.1);
+        opacity: 1;
+    }
+
+    90% {
+        transform: translate(-30px, 0) scale(1.1, 1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(300px, 0) scale(1.1, 1.1);
+        opacity: 0;
+    }
+}

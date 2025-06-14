@@ -1,0 +1,550 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    box-sizing: border-box;
+    background: #fff url(assets/bg1.webp) center/cover no-repeat fixed;
+    color: #605E5E;
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+#zaufali_nam,
+#oferta,
+#rekomendacje,
+#o_nas,
+#kontakt {
+    scroll-margin-top: 89px;
+}
+
+/* general font styles */
+
+.mainspan,
+.mainnav a,
+h2,
+.onas div h3,
+#c,
+.spanonas {
+    color: #8B724F;
+}
+
+#maindiv {
+    font-size: clamp(1rem, 1.4vw, 1.8rem);
+}
+
+.mainspan {
+    font-size: clamp(0.9rem, 2.2vw, 3rem)
+}
+
+h1,
+#maindiv div {
+    font-size: clamp(0.8rem, 1.8vw, 2.5rem);
+    text-align: center;
+}
+
+h2 {
+    font-size: clamp(0.8rem, 1.5vw, 2rem);
+    text-align: center;
+}
+
+h3 {
+    font-size: clamp(0.7rem, 0.75vw, 1.2rem);
+}
+
+.picon,
+#c {
+    font-size: clamp(0.6rem, 0.65vw, 1rem);
+}
+
+p,
+li,
+.quote,
+label {
+    font-size: clamp(0.7rem, 0.9vw, 1.1rem);
+}
+
+/*  */
+
+body {
+    backdrop-filter: blur(5px);
+    margin: 0;
+    min-height: 100vh;
+}
+
+body>* {
+    margin: 0 20%;
+}
+
+/* Main TOP NAV bar */
+
+#navlogo {
+    all: unset;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.mainnav {
+    margin: 0;
+    max-height: 86px;
+    position: sticky;
+    top: 0;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 99;
+}
+
+.mainnav ul {
+    align-items: center;
+    display: flex;
+    background-color: #fffffff2;
+    box-shadow: 0 0 20px #00000080;
+    margin: 0;
+    padding: 0;
+}
+
+.mainnav ul li:first-child {
+    margin-right: auto;
+}
+
+li {
+    list-style: none;
+    padding-right: 1rem;
+}
+
+li a img {
+    display: inline-block;
+    max-width: clamp(0.4rem, 0.75vw, 0.8rem);
+}
+
+
+
+/* main nav responsive - hamburger */
+
+#hmbrger {
+    display: none;
+    max-width: 30px;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+
+.responsivee .mobile {
+    animation: show 250ms ease-in-out both;
+    display: block;
+}
+
+/* main*/
+
+#maindiv {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#maindiv>div {
+    width: 35%;
+}
+
+.mainspan {
+    display: block;
+    font-weight: 700;
+}
+
+#mainlogo {
+    animation: showlogo 2s cubic-bezier(.25, .46, .45, .94);
+}
+
+
+
+@keyframes showlogo {
+    0% {
+        transform: scale(0) rotate(-1260deg);
+        filter: blur(10px);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+        filter: blur(0);
+    }
+}
+
+/* marquee */
+
+#zaufali_nam {
+    margin: 0px;
+}
+
+.marquee {
+    background-color: #fff;
+    border: 4px solid #8B724F;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    --gap: 1rem;
+    margin: 0px;
+    overflow: hidden;
+    row-gap: var(--gap);
+}
+
+.marquee_content {
+    animation: scroll 150s linear 3s infinite both;
+    display: flex;
+    flex-shrink: 0;
+    row-gap: var(--gap);
+    justify-content: space-around;
+    margin: 0;
+    min-width: 100%;
+}
+
+.marquee_content * {
+    align-self: center;
+    max-width: 100%;
+    min-height: 132px;
+    padding: 2px;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(calc(-100% - var(--gap)), 0, 0);
+    }
+}
+
+/* OFERTA */
+
+.blue {
+    color: #207EA9;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+#oferta * {
+    text-align: center;
+}
+
+.ofertanavflex {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+#ofertanav1 {
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    width: 65%;
+    justify-content: center;
+}
+
+#ofertanav2 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#ofertanav1 a {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+}
+
+#ofertanav1 a img {
+    width: 50%;
+}
+
+#ofertanav2 a {
+    align-items: center;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+#ofertanav2 a p {
+    min-width: 9rem;
+}
+
+#ofertanav2 a img {
+    width: 50%;
+}
+
+figure {
+    margin: 0
+}
+
+/* rekomendacje */
+
+#rekomendacje>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#rekomendacje div figure {
+    box-shadow: 0 0 20px #00000066;
+    min-width: 12rem;
+    padding: 0.5rem;
+    backdrop-filter: blur(10px);
+}
+
+.quote {
+    animation: show 250ms ease-in-out both;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.quotecap {
+    text-align: end;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.company {
+    font-weight: 700;
+}
+
+/* rekomendacje controlls */
+
+#dots {
+    text-align: center;
+}
+
+.dots {
+    border: 1px solid #8c734f;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    width: clamp(0.5rem, 1vw, 1rem);
+    height: clamp(0.5rem, 1vw, 1rem);
+}
+
+#rekocontroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+#rekocontroll>div:nth-child(2) {
+    width: 5%;
+}
+
+#next,
+#prev {
+    background-color: #8c734fb3;
+    border-radius: 2px;
+    width: 25%;
+}
+
+#next {
+    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
+}
+
+#prev {
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 10% 100%, 0 50%);
+}
+
+/* O NAS  */
+
+.onas {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: start;
+
+}
+
+.onas>* {
+    width: 45%;
+}
+
+.onas div img {
+    padding: 0.8rem 0;
+    width: 100%;
+}
+
+.spanonas,
+.spanonas2 {
+    font-weight: 700;
+}
+
+/* KONTAKT */
+
+#kontakt {
+    text-align: center;
+}
+
+#kontakt ul {
+    padding: 0;
+}
+
+#kontakt h3 {
+    color: #8B724F;
+}
+
+#kontaktflex {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    text-align: start;
+}
+
+#kontaktflex>* {
+    width: 100%;
+}
+
+#kontaktflex div img {
+    width: 100%;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form>* {
+    width: 100%;
+}
+
+#kontaktflex2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#kontaktflex2>* {
+    width: 49%;
+}
+
+textarea {
+    resize: none;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+}
+
+input,
+textarea {
+    background-color: #ffffff38;
+    border: solid 1px #8b724f7d;
+    box-shadow: #000 0 0 3px 0;
+}
+
+textarea {
+    min-height: 5rem;
+}
+
+button {
+    background-color: #8b724f;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    margin-bottom: 4px;
+    padding: 0.7rem;
+}
+
+/* © */
+
+#c {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* @ */
+
+@media (max-width:1692px) {
+    #kontaktflex {
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width:929px) {
+    .mobile {
+        display: none;
+        padding: 0.5rem;
+    }
+    #hmbrger {
+        display: block;
+    }
+    .mainnav ul {
+        flex-direction: column;
+    }
+    body>* {
+        margin: 0 5%;
+    }
+}
+@media (max-width:650px) {
+    #maindiv {
+        flex-direction: column;
+    }
+    #maindiv>div,
+    #ofertanav2,
+    #ofertanav1,
+    .onas>* {
+        width: 100%;
+    }
+    .ofertanavflex,
+    .onas {
+        flex-direction: column;
+    }
+    #ofertanav2 {
+        flex-direction: row;
+        gap: 1rem;
+    }
+    #ofertanav2 a p {
+        min-width: 5rem;
+    }
+    #next,
+    #prev {
+        width: 35%;
+    }
+}
+@media (max-width:450px) {
+    #ofertanav1 a figure figcaption h3 {
+        font-size: 0.55rem;
+    }
+    #mainnav ul li img {
+        width: 300px;
+    }
+    #hmbrger {
+        top: 24.5px;
+    }
+    #zaufali_nam,
+    #oferta,
+    #rekomendacje,
+    #o_nas,
+    #kontakt {
+        scroll-margin-top: 79px;
+    }
+}

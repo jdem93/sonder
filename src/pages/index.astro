@@ -1,0 +1,517 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION, CURRENT_YEAR } from '../consts';
+import '@src/assets/css/font.css';
+import '@src/assets/css/styles.css';
+---
+
+<!doctype html>
+<html lang="pl">
+	<head>
+		<!-- <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} /> -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description"
+			content="Naszą domeną są dotacje, a tym samym - skuteczne dokumentacje aplikacyjne dla projektów finansowanych ze źródeł zewnętrznych, w tym Unii Europejskiej. Opracowujemy m.in. wnioski o dofinansowanie, biznes plany, studia wykonalności, analizy finansowo-ekonomiczne.">
+		<link rel="icon" type="image/x-icon" href="logo.ico">
+		<!-- <link rel="stylesheet" href="assets/css/font.css"> -->
+		<link rel="preload" as="font" href="fonts/7cHpv4kjgoGqM7E_Ass52Hs.woff2" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" as="font" href="fonts/7cHpv4kjgoGqM7E_DMs5.woff2" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" as="font" href="fonts/7cHqv4kjgoGqM7E3t-4s51os.woff2" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" as="font" href="fonts/7cHqv4kjgoGqM7E3t-4s6VospT4.woff2" type="font/woff2" crossorigin="anonymous">
+		<!-- <link rel="stylesheet" href="styles.css"> -->
+		<title>Sonder</title>
+	</head>
+	<body>
+
+		<nav id="mainnav" class="mainnav">
+			<ul>
+				<li><img src="assets/1navlogo.webp" alt="" id="navlogo"></li>
+				<li><a href="#zaufali_nam" class="mobile" onclick="jumpTo()">ZAUFALI NAM</a></li>
+				<li><a href="#oferta" class="mobile" onclick="jumpTo()">OFERTA</a></li>
+				<li><a href="#rekomendacje" class="mobile" onclick="jumpTo()">REKOMENDACJE</a></li>
+				<li><a href="#o_nas" class="mobile" onclick="jumpTo()">O NAS</a></li>
+				<li><a href="#kontakt" class="mobile" onclick="jumpTo()">KONTAKT</a></li>
+				<li><a href="aktualnosci.html" class="mobile" onclick="jumpTo()"><img src="assets/arrow.svg"
+							alt="">AKTUALNOŚCI</a></li>
+				<li>
+					<div>
+						<a href="javascript:void(0);" onclick="navFunction()"> <img src="assets/hmbrgr.svg" id="hmbrger"
+								alt=""></a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	
+		<main>
+			<h1>WSPIERAMY W<br>ROZWOJU</h1>
+			<div id="maindiv">
+				<div>
+					WARTOŚĆ<br>DOFINANSOWANYCH<br>PROJEKTÓW<br>
+				</div>
+				<img src="assets/mainlogo.svg" id="mainlogo" alt="">
+				<div>
+					<span class="mainspan i1">531 074 528 zł</span>
+				</div>
+			</div>
+		</main>
+	
+		<section id="zaufali_nam">
+			<h2>ZAUFALI NAM</h2>
+			<div class="marquee marquee3k" data-speed="0.25" data-reverse="bool">
+				<ul class=" marquee_content">
+					<li><img src="assets/marquee/1.webp" alt=""></li>
+					<li><img src="assets/marquee/2.webp" alt=""></li>
+					<li><img src="assets/marquee/3.webp" alt=""></li>
+					<li><img src="assets/marquee/4.webp" alt=""></li>
+					<li><img src="assets/marquee/5.webp" alt=""></li>
+					<li><img src="assets/marquee/6.webp" alt=""></li>
+					<li><img src="assets/marquee/7.webp" alt=""></li>
+					<li><img src="assets/marquee/8.webp" alt=""></li>
+					<li><img src="assets/marquee/9.webp" alt=""></li>
+					<li><img src="assets/marquee/10.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/11.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/12.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/13.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/14.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/15.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/16.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/17.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/18.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/19.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/20.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/21.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/22.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/23.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/24.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/25.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/26.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/27.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/28.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/29.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/30.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/31.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/32.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/33.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/34.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/35.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/36.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/37.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/38.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/39.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/40.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/41.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/42.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/43.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/44.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/45.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/46.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/47.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/48.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/49.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/50.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/51.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/52.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/53.webp" alt="" loading="lazy"></li>
+				</ul>
+				<ul class="marquee_content" aria-hidden="true">
+					<li><img src="assets/marquee/1.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/2.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/3.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/4.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/5.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/6.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/7.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/8.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/9.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/10.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/11.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/12.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/13.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/14.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/15.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/16.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/17.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/18.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/19.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/20.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/21.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/22.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/23.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/24.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/25.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/26.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/27.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/28.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/29.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/30.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/31.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/32.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/33.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/34.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/35.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/36.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/37.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/38.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/39.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/40.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/41.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/42.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/43.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/44.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/45.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/46.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/47.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/48.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/49.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/50.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/51.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/52.webp" alt="" loading="lazy"></li>
+					<li><img src="assets/marquee/53.webp" alt="" loading="lazy"></li>
+				</ul>
+			</div>
+		</section>
+	
+		<section id="oferta">
+			<h2>OFERTA</h2>
+			<p>Naszą domeną są dotacje, a tym samym - <span class="blue"><a href="#rekomendacje">skuteczne dokumentacje
+						aplikacyjne</a></span> dla
+				projektów
+				finansowanych ze
+				źródeł zewnętrznych, w tym Unii Europejskiej. Opracowujemy m.in. wnioski o dofinansowanie, biznes plany,
+				studia wykonalności, analizy finansowo-ekonomiczne. Każdy Klient otrzymuje również wsparcie w zakresie
+				ustalenia optymalnego zakresu projektu, konstruowania budżetu i sporządzeniu pozostałych wymaganych
+				dokumentów.</p>
+			<p>Nasza oferta jest odpowiedzią na złożone potrzeby i oczekiwania wielu grup odbiorców i obejmuje
+				następujące
+				obszary (szczegóły danego zagadnienia po kliknięciu w ikonę/obrazek):</p>
+			<div class="ofertanavflex">
+				<div id="ofertanav1">
+					<a href="oferta_badania-i-rozwuj.html"><img src="assets/oferta/oferta1.svg" alt="" loading="lazy">
+						<figure>
+							<figcaption>
+								<h3>BADANIA I ROZWÓJ</h3>
+							</figcaption>
+						</figure>
+					</a>
+					<a href="oferta_inwestycje-infrastrukturalne.html"><img src="assets/oferta/oferta2.svg" alt=""
+							loading="lazy">
+						<figure>
+							<figcaption>
+								<h3>INWESTYCJE INFRASTRUKTURALNE</h3>
+							</figcaption>
+						</figure>
+					</a>
+					<a href="oferta_eksport.html"><img src="assets/oferta/oferta3.svg" alt="" loading="lazy">
+						<figure>
+							<figcaption>
+								<h3>EKSPORT</h3>
+							</figcaption>
+						</figure>
+					</a>
+					<a href="oferta_projekty-miekkie.html"><img src="assets/oferta/oferta4.svg" alt="" loading="lazy">
+						<figure>
+							<figcaption>
+								<h3>PROJEKTY "MIĘKKIE"</h3>
+							</figcaption>
+						</figure>
+					</a>
+					<a href="oferta_informatyzacja.html"><img src="assets/oferta/oferta5.svg" alt="" loading="lazy">
+						<figure>
+							<figcaption>
+								<h3>INFORMATYZACJA</h3>
+							</figcaption>
+						</figure>
+					</a>
+					<a href="oferta_ochrona-srodowiska.html"><img src="assets/oferta/oferta6.svg" alt="" loading="lazy">
+						<figure>
+							<figcaption>
+								<h3>OCHRONA ŚRODOWISKA</h3>
+							</figcaption>
+						</figure>
+					</a>
+					<a href="oferta_rozliczanie-wdrazanie.html"><img src="assets/oferta/oferta7.svg" alt="" loading="lazy">
+						<figure>
+							<figcaption>
+								<h3>ROZLICZANIE WDRAŻANIE</h3>
+							</figcaption>
+						</figure>
+					</a>
+					<a href="oferta_wieloletnie-plany-finansowania.html"><img src="assets/oferta/oferta8.svg" alt=""
+							loading="lazy">
+						<figure>
+							<figcaption>
+								<h3>WIELOLETNIE PLANY FINANSOWANIA</h3>
+							</figcaption>
+						</figure>
+					</a>
+					<a href="oferta_szkolenia.html"><img src="assets/oferta/oferta9.svg" alt="" loading="lazy">
+						<figure>
+							<figcaption>
+								<h3>SZKOLENIA</h3>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+	
+				<div id="ofertanav2">
+					<a href="oferta_model-wspolpracy.html"><img src="assets/oferta/oferta10.svg" alt="" loading="lazy">
+						<figure>
+							<figcaption>
+								<h3>MODEL WSPÓŁPRACY</h3>
+								<p class="picon">Sprawdź, jak wygląda współpraca z nami <span class="blue">krok po
+										kroku</span>.
+								</p>
+							</figcaption>
+						</figure>
+					</a>
+					<a href="oferta_baza-wiedzy.html"><img src="assets/oferta/oferta11.svg" alt="" loading="lazy">
+						<figure>
+							<figcaption>
+								<h3>BAZA WIEDZY</h3>
+								<p class="picon"><span class="blue">Fundusze europejskie</span> - poznaj najważniejsze
+									informacje na ich
+									temat.</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+			</div>
+		</section>
+	
+		<section id="rekomendacje">
+			<h2>REKOMENDACJE</h2>
+			<div>
+				<figure class="quote">
+					<blockquote>
+						Zespół SONDER to specjaliści godni zaufania, zaangażowani w każdy etap przygotowywania dokumentów,
+						wartościowo opiniujący kwestie merytoryczne, budżetowe. Polecam firmę SONDER każdej firmie pragnącej
+						rozwinąć działalność dzięki pozyskaniu dofinansowania ze środków UE.
+					</blockquote>
+					<figcaption class="quotecap">
+						<span class="company">Prezes Zarządu Unitop sp. z o.o.</span>
+						<br>
+						Artur Magolewski
+					</figcaption>
+				</figure>
+				<figure class="quote">
+					<blockquote>
+						Pragnę potwierdzić rzetelną i skuteczną współpracę z zespołem SONDER, w składzie: Beata
+						Jurgiel-Kurcewicz i Jędrzej Demianiuk, przy opracowaniu kompletnej dokumentacji aplikacyjnej (w tym
+						biznesplanu, analizy finansowej, wniosku o dofinansowanie) Projektu pod tytułem Rozwój
+						infrastruktury B+R firmy Solaris Optics S.A. drogą do wdrożenia innowacji. Na bazie przygotowanej
+						dokumentacji, firma Solaris Optics S.A. pozyskała dotację o wartości 585 469,20 zł. Wartość Projektu
+						wyniosła 1 587 797,48 zł.
+					</blockquote>
+					<figcaption class="quotecap">
+						<span class="company">Prezes Zarządu Solaris Optics S.A.</span>
+						<br>
+						Michał Muniak
+					</figcaption>
+				</figure>
+				<figure class="quote">
+					<blockquote>
+						Zespół SONDER to rzetelni i godni zaufania eksperci w dziedzinie pozyskiwania dotacji ze środków
+						Unii Europejskiej. Potrafią pracować pod presją czasu bez utraty jakości sporządzanych materiałów.
+						Polecam nawiązanie współpracy z firmą SONDER wszystkim przedsiębiorcom, którzy pragną rozwinąć swoją
+						działalność, w tym pozyskać środki ze źródeł zewnętrznych.
+					</blockquote>
+					<figcaption class="quotecap">
+						<span class="company">Współwłaściciel Carolina Car Company sp. j.</span>
+						<br>
+						Piotr Sójka
+					</figcaption>
+				</figure>
+				<figure class="quote">
+					<blockquote>
+						Reprezentując Świętokrzyskie Centrum Onkologii Samodzielny Publiczny Zakład Opieki Zdrowotnej
+						potwierdzam, że firma SONDER opracowała dokumentację aplikacyjną dla projektu „Wymiana jednego
+						akceleratora oraz rozbudowa Kliniki Radioterapii Świętokrzyskiego Centrum Onkologii w Kielcach z
+						zakupem dodatkowego akceleratora” w ramach działania 9.2 PO IiŚ. Wartość projektu – 33 220 947,13 zł
+						z dofinansowaniem w wysokości 28 928 387,83 zł. Dokumentacja projektowa przygotowana została
+						poprawnie i terminowo, zgodnie z zawartą umową. Projekt przeszedł pozytywnie ocenę formalna i
+						merytoryczną. Uzyskał dofinansowanie i w grudniu 2017 r. została podpisana z Ministerstwem Zdrowa na
+						jego realizację.
+					</blockquote>
+					<figcaption class="quotecap">
+						<span class="company">Z-ca Dyrektora ds. Techniczno-Inwestycyjnych ŚCO</span>
+						<br>
+						mgr inż. Wojciech Cedro
+					</figcaption>
+				</figure>
+				<figure class="quote">
+					<blockquote>
+						Eksperci SONDER wykazali się profesjonalizmem, kompleksową wiedzą dotyczącą sektora badań i rozwoju
+						oraz znajomością potrzeb jednostek naukowych, co stanowiło niezwykle cenny wkład w konstruowanie
+						Projektu.
+					</blockquote>
+					<figcaption class="quotecap">
+						<span class="company">Kanclerz Uniwersytetu Kardynała Stefana Wyszyńskiego w Warszawie</span>
+						<br><script src="@src/assets/scripts/script.js"></script>niu budżetu i innych części dokumentacji. Wszystkie powierzone im czynności zostały
+						wykonane w sposób profesjonalny. Zespół SONDER to godny polecenia partner.
+					</blockquote>
+					<figcaption class="quotecap">
+						<span class="company">Prezes Zarządu "Sanplast" S.A.</span>
+						<br>
+						Wiesław Podraza
+					</figcaption>
+				</figure>
+				<figure class="quote">
+					<blockquote>
+						Z przyjemnością polecam skorzystanie z usług zespołu SONDER. Charakteryzuje je dbałość o wszelkie
+						szczegóły, jak i o najwyższą jakość całej dokumentacji aplikacyjnej.
+					</blockquote>
+					<figcaption class="quotecap">
+						<span class="company">Zarząd SEGI-AT Sp. z o.o.</span>
+						<br>
+						Artur Oraczewski
+					</figcaption>
+				</figure>
+				<figure class="quote">
+					<blockquote>
+						Gorąco polecam Zespół ekspertów SONDER wszystkim podmiotom zamierzającym starać się o dotację ze
+						środków funduszy europejskich w ramach tzw. projektów „miękkich”. Osoby odpowiedzialne za powstanie
+						dokumentacji aplikacyjnej wykazały się nie tylko rzetelnością i terminowością, ale także
+						kreatywnością i wielkim zaangażowaniem.
+					</blockquote>
+					<figcaption class="quotecap">
+						<span class="company">Prezes Zarządu Fundacji Szkoła Liderów</span>
+						<br>
+						Przemysław Radwan-Rohrenschef
+					</figcaption>
+				</figure>
+				<figure class="quote">
+					<blockquote>
+						(...) opracowali dla firmy INES Sp. z o.o. pełną dokumentację aplikacyjną (w tym wniosek o
+						dofinansowanie w języku angielskim) dla projektu pt. „in4med – innovative large scale ICT-solution
+						supporting the eHealth system of the UE by providing personalised e-services considering medical
+						devices” w ramach Horyzontu 2020, Instrumentu MŚP.
+					</blockquote>
+					<figcaption class="quotecap">
+						<span class="company">Prezes Zarządu INES sp. z o.o.</span>
+						<br>
+						Wojeciech Kozimor
+					</figcaption>
+				</figure>
+				<figure class="quote">
+					<blockquote>
+						Eksperci zespołu SONDER są rzetelnymi i godnymi zaufania partnerami. Z powierzonych zadań wywiązują
+						się solidnie i terminowo, świadcząc usługi doradcze na najwyższym poziomie. Pragniemy polecić usługi
+						firmy wszystkim podmiotom zamierzającym starać się o pozyskanie dofinansowania ze źródeł
+						zewnętrznych, w tym z funduszy europejskich.
+					</blockquote>
+					<figcaption class="quotecap">
+						<span class="company">Rektor Akademii Wychowania Fizycznego Józefa Piłsudskiego w Warszawie</span>
+						<br>
+						dr hab. Andrzej Mastalerz
+					</figcaption>
+				</figure>
+			</div>
+			<div id="rekocontroll">
+				<button id="prev" class="nextprev" onclick="prev()">poprzedni</button>
+				<div></div>
+				<button id="next" class="nextprev" onclick="next()">następny</button>
+			</div>
+			<div id="dots">
+				<span class="dots" onclick="dotSelect(0)"></span>
+				<span class="dots" onclick="dotSelect(1)"></span>
+				<span class="dots" onclick="dotSelect(2)"></span>
+				<span class="dots" onclick="dotSelect(3)"></span>
+				<span class="dots" onclick="dotSelect(4)"></span>
+				<span class="dots" onclick="dotSelect(5)"></span>
+				<span class="dots" onclick="dotSelect(6)"></span>
+				<span class="dots" onclick="dotSelect(7)"></span>
+				<span class="dots" onclick="dotSelect(8)"></span>
+				<span class="dots" onclick="dotSelect(9)"></span>
+			</div>
+	
+		</section>
+	
+		<section id="o_nas">
+			<h2>O NAS</h2>
+			<div class="onas">
+				<div>
+					<img src="assets/z1.webp" class="onasi" id="onasi1" alt="" loading="lazy">
+					<h3>SONDER W PRAKTYCE</h3>
+					<p>Planowanie konkretnych działań jest równie ważne, co usuwanie barier finansowych, czy rozwój
+						pracowników.
+						Z tą właśnie świadomością <span class="spanonas2">wspieramy w rozwoju</span> kompleksowo. Pomagamy w
+						dziedzinach, takich jak
+						strategiczne planowanie, dofinansowania unijne, wdrażanie projektów, czy podnoszenie kompetencji.
+					</p>
+					<p>Chcemy być zaufanym doradcą, z którym warto jest zostać na dłużej. Klientów traktujemy przede
+						wszystkim,
+						jak partnerów, których zawsze słuchamy i prowadzimy indywidualnie dobranymi ścieżkami rozwoju.
+						Kolejny
+						rozdział w historii każdego z nich to dla nas największa nagroda i dowód na to, że
+						<span class="spanonas">SONDER</span> to coś, czego
+						warto spróbować.
+				</div>
+	
+				<div>
+					<h3>GENEZA MARKI. SONDER - DOTACJE UE</h3>
+					<p>Firma została założona przez grupę osób, które pragną kształtować rzeczywistość i prowadzić do
+						prężnego
+						rozwoju przedsiębiorstw, organizacji pozarządowych, jednostek naukowo-badawczych, czy reprezentantów
+						sektora ochrony zdrowia. Marka łączy w sobie silne osobowości, którym przyświeca jeden cel -
+						nieustanny
+						rozwój: własny oraz wszelkich podmiotów, które na co dzień wspiera <span
+							class="spanonas">SONDER</span>.</p>
+					<p>Cel działalności <span class="spanonas">SONDER</span> to stworzenie sfery dającej satysfakcję,
+						możliwość ciągłego
+						doskonalenia nie
+						tylko nam, ale i naszym Klientom. Jesteśmy pewni, że każda organizacja może osiągać swoje cele przy
+						odpowiednim zaplanowaniu podejmowanych działań</p>
+					<img src="assets/z2.webp" class="onasi" id="onasi2" alt="" loading="lazy">
+				</div>
+			</div>
+		</section>
+	
+		<section id="kontakt">
+			<h2>KONTAKT</h2>
+			<ul>
+				<li>
+					<p><a href="mailto:info@sonder.pl">e-mail: info@sonder.pl</a></p>
+				</li>
+			</ul>
+			<h3>Odbierz bezpłatną konsultację dotyczącą pozyskania dotacji</h3>
+			<div id="kontaktflex">
+				<div>
+					<img src="assets/z3.webp" alt="" loading="lazy">
+				</div>
+				<form action="https://api.web3forms.com/submit" method="POST">
+						<input type="hidden" name="subject" value="New Submission from Sonder.pl">
+						<input type="hidden" name="redirect" value="https://sonder.pl/message.html">
+						<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+						<input type="hidden" name="access_key" value="ece07e48-194e-4e1c-91d9-2e01689126c4">
+						<div id="kontaktflex2">
+							<div>
+								<label for="name">Imię i nazwisko*</label>
+								<input type="text" name="name" id="name" required>
+							</div>
+							<div>
+								<label for="email">Email*</label>
+								<input type="email" name="email" id="email" required>
+							</div>
+						</div>
+						<div>
+							<label for="company">Nazwa firmy/organizacji</label>
+							<input type="text" name="company" id="company" required>
+						</div>
+						<div>
+							<label for="message">Na co potrzebne jest dofinansowanie?</label>
+							<textarea name="message" id="message" required></textarea>
+						</div>
+						<button type="submit">ODBIERAM</button>
+				</form>
+			</div>
+		</section>
+	
+		<div id="c">© 2024 by SONDER</div>
+		<script is:inline src="@src/assets/scripts/script.js"></script>
+
+	</body>
+</html>
